@@ -1,168 +1,963 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Oluwafeyitimi Hephzibah | Frontend Developer</title>
-        <meta name="description" content="Portfolio of Oluwafeyitimi Hephzibah, a frontend developer skilled in HTML, CSS, JavaScript and responsive design.">
-        <meta name="google-site-verification" content="i7v8B3HIRRGft6GPEl9Hi844AZX14ogDHZWRZ-Cbv-4">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/96b1a93a32.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne+Mono&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="body-container">
-            <nav class="navbar">
-                <div class="nav-brand">
-                    <h1>Hephzibah</h1>
-                    <span>Developer</span>
-                </div>
-                <div class="nav-links">
-                    <a href="https://github.com/zibvh" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://discord.gg/kzYBwKMu" aria-label="Discord">
-                        <i class="fa-brands fa-discord"></i>
-                    </a>
-                    <a class="email" href="mailto:bhuszibah@gmail.com" aria-label="Email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-            </nav>
-            
-            <section class="hero">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h2>Hi, I'm <span class="highlight">Hephzibah</span></h2>
-                        <p class="tagline">Nigerian Developer crafting digital experiences</p>
-                        <p class="intro">
-                            I'm a passionate developer specializing in creating responsive, 
-                            user-friendly web interfaces. With expertise in Frontend development, knowledge in the backend development field. I started learning c# this year as I plan to move to app development.
-                            I transform ideas into engaging digital experiences.
-                        </p>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="number">25+</span>
-                                <span class="label">Solo and joint Projects</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">20+</span>
-                                <span class="label">Months Experience</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">100%</span>
-                                <span class="label">Client Satisfaction</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <a href="projects.html" class="btn primary">
-                            <i class="fa-solid fa-code"></i>
-                            <span>View Projects</span>
-                        </a>
-                        <a href="testimony.html" class="btn secondary">
-                            <i class="fa-solid fa-star"></i>
-                            <span>Testimonials</span>
-                        </a>
-                        <a href="https://wa.me/2349028155340" class="btn accent">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <span>Hire Me</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="me.jpg" alt="Portrait of Hephzibah">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="technologies">
-                <h3>Technologies I Use</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fa-brands fa-html5"></i>
-                        </div>
-                        <p>HTML5</p>
-                        <span>Advanced</span>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fa-brands fa-css3-alt"></i>
-                        </div>
-                        <p>CSS3</p>
-                        <span>Advanced</span>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-                        <p>JavaScript</p>
-                        <span>Beginner</span>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fa-solid fa-mobile-screen"></i>
-                        </div>
-                        <p>Responsive Design</p>
-                        <span>Advanced</span>
-                    </div>
-                </div>
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hephzibah | Frontend Developer</title>
+    <meta name="description" content="Portfolio of Oluwafeyitimi Hephzibah, a frontend developer skilled in HTML, CSS, JavaScript and responsive design.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            <section class="features">
-                <div class="feature">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h4>Responsive Design</h4>
-                    <p>Perfectly optimized for all devices</p>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+        }
+
+        .logo span {
+            font-size: 0.85rem;
+            font-weight: 400;
+            margin-left: 0.5rem;
+            color: #666;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0a0a0a;
+            border-radius: 14px;
+            color: #999;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #1a1a1a;
+        }
+
+        .nav-links a:hover {
+            background: #111;
+            color: #fff;
+            border-color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            padding: 5rem 0;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .greeting {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .greeting i {
+            font-size: 2.5rem;
+            color: #ffd700;
+            animation: subtlePulse 2s infinite;
+        }
+
+        @keyframes subtlePulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #808080 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            color: #888;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+        }
+
+        .intro {
+            color: #aaa;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            max-width: 560px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat {
+            padding: 1.5rem;
+            background: #080808;
+            border-radius: 18px;
+            border: 1px solid #181818;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat:hover {
+            background: #0c0c0c;
+            border-color: #333;
+        }
+
+        .stat .number {
+            display: block;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.3rem;
+            font-family: 'Syne', sans-serif;
+        }
+
+        .stat .label {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 1rem 2rem;
+            border-radius: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 1rem;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .btn-primary:hover {
+            background: #e0e0e0;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #0f0f0f;
+            border-color: #555;
+            transform: translateY(-3px);
+        }
+
+        .btn-accent {
+            background: #111;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .btn-accent:hover {
+            background: #1a1a1a;
+            border-color: #25D366;
+            color: #25D366;
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            border-radius: 28px;
+            filter: grayscale(50%) contrast(1.1);
+            border: 1px solid #222;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .image-wrapper img:hover {
+            filter: grayscale(0%);
+            border-color: #444;
+            transform: scale(1.02);
+        }
+
+        .image-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 1px solid #1a1a1a;
+            border-radius: 28px;
+            z-index: -1;
+        }
+
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            letter-spacing: -0.03em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.8rem;
+            padding: 2rem 0 4rem;
+        }
+
+        .tech-card {
+            background: #080808;
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            border: 1px solid #181818;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .tech-card:hover {
+            background: #0c0c0c;
+            border-color: #333;
+            transform: translateY(-8px);
+        }
+
+        .tech-card i {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .tech-card .fa-html5 { color: #e34f26; }
+        .tech-card .fa-css3-alt { color: #1572b6; }
+        .tech-card .fa-js { color: #f7df1e; }
+        .tech-card .fa-mobile-screen { color: #888; }
+
+        .tech-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .tech-card span {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.8rem;
+            padding: 2rem 0 4rem;
+        }
+
+        .feature-card {
+            background: #080808;
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid #181818;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            background: #0c0c0c;
+            border-color: #333;
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 2.2rem;
+            color: #666;
+            margin-bottom: 1.8rem;
+        }
+
+        .feature-card h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-card p {
+            color: #888;
+            font-size: 1rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .project-card {
+            background: #080808;
+            border-radius: 24px;
+            border: 1px solid #181818;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: #333;
+        }
+
+        .project-card.featured {
+            border-color: #2a2a2a;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+        }
+
+        .project-header h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .badge {
+            background: #141414;
+            color: #888;
+            padding: 0.3rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+        }
+
+        .badge.featured {
+            background: #ffffff;
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .project-description {
+            color: #999;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .tech-tag {
+            background: #141414;
+            color: #aaa;
+            padding: 0.3rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .project-link {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .project-link:hover {
+            color: #fff;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #1a1a1a;
+            transition: all 0.3s;
+        }
+
+        .project-gallery img:hover {
+            border-color: #333;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .testimonial-card {
+            background: #080808;
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid #181818;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            background: #0c0c0c;
+            border-color: #2a2a2a;
+        }
+
+        .quote {
+            font-size: 5rem;
+            color: #1a1a1a;
+            position: absolute;
+            top: 0.5rem;
+            right: 1.5rem;
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            color: #ccc;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .rating {
+            margin-bottom: 1.5rem;
+        }
+
+        .rating i {
+            color: #ffd700;
+            font-size: 0.9rem;
+            margin-right: 0.2rem;
+        }
+
+        .client h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .client span {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            color: #888;
+            text-decoration: none;
+            padding: 0.9rem 1.8rem;
+            background: #080808;
+            border-radius: 14px;
+            border: 1px solid #1a1a1a;
+            margin-bottom: 2.5rem;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #fff;
+            border-color: #333;
+            background: #0f0f0f;
+            transform: translateX(-5px);
+        }
+
+        .cta {
+            background: #080808;
+            border-radius: 28px;
+            padding: 4rem;
+            text-align: center;
+            border: 1px solid #181818;
+            margin: 4rem 0;
+        }
+
+        .cta h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .cta p {
+            color: #888;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            border-top: 1px solid #111;
+            padding: 2.5rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-content p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0a0a0a;
+            border-radius: 12px;
+            color: #888;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid #1a1a1a;
+        }
+
+        .social-links a:hover {
+            background: #141414;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .not-found-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: #000;
+        }
+
+        .not-found-page h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .glitch {
+            animation: glitch 1s infinite;
+            color: #fff;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-3px, 3px); }
+            40% { transform: translate(-3px, -3px); }
+            60% { transform: translate(3px, 3px); }
+            80% { transform: translate(3px, -3px); }
+        }
+
+        .not-found-page header {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+
+        .page-header h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.03em;
+        }
+
+        .page-header p {
+            color: #888;
+            font-size: 1.3rem;
+        }
+
+        .star-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .star-rating i {
+            color: #ffd700;
+        }
+
+        .star-rating span {
+            color: #666;
+            margin-left: 0.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 3.5rem;
+            }
+            
+            .greeting {
+                justify-content: center;
+            }
+            
+            .intro {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .stats {
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .btn-group {
+                justify-content: center;
+            }
+            
+            .image-wrapper {
+                max-width: 380px;
+                margin: 0 auto;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .cta {
+                padding: 2.5rem 1.5rem;
+            }
+            
+            .cta h2 {
+                font-size: 2rem;
+            }
+            
+            .page-header h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .btn-group {
+                width: 100%;
+            }
+            
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-gallery img {
+                height: 160px;
+            }
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(25px);
+            animation: fadeUp 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                Hephzibah
+                <span>DEVELOPER</span>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/zibvh" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://discord.gg/kzYBwKMu" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="mailto:bhuszibah@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="greeting">
+                    <i class="fa-solid fa-hand-peace"></i>
+                    <span style="color: #888;">Hello there</span>
                 </div>
-                <div class="feature">
-                    <i class="fa-solid fa-bolt"></i>
-                    <h4>Fast Performance</h4>
-                    <p>Lightning-fast loading times</p>
+                <h1>
+                    I'm <span class="gradient-text">Hephzibah</span>
+                </h1>
+                <p class="tagline">Nigerian developer crafting digital experiences</p>
+                <p class="intro">
+                    I build responsive, user-focused web interfaces with precision and care. 
+                    With a strong frontend foundation and an eye for refined design, 
+                    I transform concepts into polished digital products. Currently exploring C# for cross-platform development.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number">25+</span>
+                        <span class="label">PROJECTS SHIPPED</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">20+</span>
+                        <span class="label">MONTHS CODING</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">100%</span>
+                        <span class="label">CLIENT DELIGHT</span>
+                    </div>
                 </div>
-                <div class="feature">
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Clean Code</h4>
-                    <p>Well-structured and maintainable</p>
+                <div class="btn-group">
+                    <a href="projects.html" class="btn btn-primary">
+                        <i class="fa-solid fa-code"></i>
+                        View Projects
+                    </a>
+                    <a href="testimony.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-star"></i>
+                        Testimonials
+                    </a>
+                    <a href="https://wa.me/2349028155340" class="btn btn-accent" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Start a Project
+                    </a>
                 </div>
-            </section>
+            </div>
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <img src="me.jpg" alt="Hephzibah portrait">
+                </div>
+            </div>
+        </section>
+
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="tech-grid">
+            <div class="tech-card fade-up delay-1">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+                <span>Advanced</span>
+            </div>
+            <div class="tech-card fade-up delay-2">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <span>Advanced</span>
+            </div>
+            <div class="tech-card fade-up delay-3">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <span>Intermediate</span>
+            </div>
+            <div class="tech-card fade-up delay-4">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Responsive</h3>
+                <span>Advanced</span>
+            </div>
         </div>
-        
-        <footer class="footer">
+
+        <h2 class="section-title">Value Proposition</h2>
+        <div class="features">
+            <div class="feature-card fade-up delay-1">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h4>Responsive Design</h4>
+                <p>Flawless experiences across every device and viewport</p>
+            </div>
+            <div class="feature-card fade-up delay-2">
+                <i class="fa-solid fa-bolt"></i>
+                <h4>Fast Performance</h4>
+                <p>Optimized for speed, engagement, and conversion</p>
+            </div>
+            <div class="feature-card fade-up delay-3">
+                <i class="fa-solid fa-code"></i>
+                <h4>Clean Architecture</h4>
+                <p>Maintainable, scalable, and well-structured code</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
             <div class="footer-content">
                 <p>&copy; 2026 Oluwafeyitimi Hephzibah. All rights reserved.</p>
                 <div class="social-links">
-                    <a href="https://github.com/zibvh"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://discord.gg/kzYBwKMu"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/zibvh" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discord.gg/kzYBwKMu" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i></a>
                     <a href="mailto:bhuszibah@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
-        </footer>
-        
-        <script>
-            // Enhanced animations
-            document.addEventListener('DOMContentLoaded', function() {
-                const techItems = document.querySelectorAll('.tech-item');
-                const features = document.querySelectorAll('.feature');
-                
-                techItems.forEach((item, index) => {
-                    item.style.animationDelay = `${index * 0.1}s`;
-                    item.classList.add('animate-in');
-                });
-
-                features.forEach((feature, index) => {
-                    feature.style.animationDelay = `${index * 0.2}s`;
-                    feature.classList.add('animate-in');
-                });
-            });
-        </script>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>

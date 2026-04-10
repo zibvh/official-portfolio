@@ -1,15 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Error 4z4</title>
-  <link rel="stylesheet" href="style2.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Hephzibah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.02;
+            z-index: 1;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: #111;
+            color: #888;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 2.5rem;
+            border: 1px solid #222;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 6rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .glitch {
+            animation: glitch 1.2s infinite;
+            color: #fff;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-4px, 4px); }
+            40% { transform: translate(-4px, -4px); }
+            60% { transform: translate(4px, 4px); }
+            80% { transform: translate(4px, -4px); }
+        }
+
+        .message {
+            font-size: 1.4rem;
+            color: #aaa;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            background: #080808;
+            border-radius: 14px;
+            border: 1px solid #1a1a1a;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .back-link:hover {
+            background: #0f0f0f;
+            border-color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .footer-note {
+            position: absolute;
+            bottom: 2rem;
+            left: 0;
+            right: 0;
+            color: #444;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            .message {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>To exit this page, go BACK</header>
+    <div class="noise"></div>
+    
+    <div class="content">
+        <div class="status-badge">HTTP 404</div>
+        <h1 class="glitch">Page Not Found</h1>
+        <p class="message">This deployment is still in the works.<br>Check back soon or return home.</p>
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            Return to Portfolio
+        </a>
+    </div>
 
-  <h1>Sorry!<br>Website has not been deployed</h1>
-
+    <div class="footer-note">
+        <i class="fa-regular fa-compass"></i> Navigate back to continue
+    </div>
 </body>
 </html>
